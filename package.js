@@ -14,7 +14,8 @@ Package.onUse(function(api) {
       'tomi:upload-server@1.1.1', 
       'tomi:upload-jquery@2.0.0',
       'iron:router@1.0.7',
-      'accounts-base'
+      'accounts-base',
+      'mizzao:bootboxjs@4.3.0',
   ], ['client', 'server']);
     
   api.use(['twbs:bootstrap@3.3.2', 'nemo64:bootstrap@3.3.1_1'], 'client', {weak: true});

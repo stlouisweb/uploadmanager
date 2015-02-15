@@ -50,9 +50,10 @@ if (Meteor.isClient) {
 
   Template.uploadedInfo.events({
     'click .deleteUpload':function() {
-      if (confirm('Are you sure?')) {
-        Meteor.call('deleteFile', this.imgId);
-      }
+        deleteThis = this.imgId;
+      bootbox.confirm("Are you sure?", function(result) {
+        Meteor.call('deleteFile', deleteThis);
+      });
     }
   })
 }
