@@ -16,7 +16,7 @@ Add the file uploader and uploads list in your template.
 ```
 Add this in your controller:
 ```
-Template.AddProduct.helpers({
+Template.templatename.helpers({
   myFormData: function() {
     return { directoryName: 'images', prefix: this._id, _id: this._id };
   }
