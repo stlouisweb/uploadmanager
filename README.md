@@ -3,6 +3,16 @@ This plugin implements the example from https://github.com/tomitrescak/meteor-up
 Currently Bootstrap is required.
 
 #Usage
+
+Add then bootstrap framework in your project.
+```
+$ meteor add twbs:bootstrap
+```
+or
+```
+$ meteor add nemo64:bootstrap
+```
+
 Add the packages.
 ```
 $ meteor add tomi:upload-server
