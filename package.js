@@ -8,7 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
-  api.use(['mongo', 'templating'], ['client', 'server']);
+  api.use(['mongo', 'templating', 'tomi:upload-server', 'tomi:upload-jquery'], ['client', 'server']);
   api.imply('templating')
   api.add_files(['uploadmanager.html', 'uploadmanager.js'], ['client', 'server']);
 });
