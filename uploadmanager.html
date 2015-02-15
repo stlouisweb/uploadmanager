@@ -1,0 +1,16 @@
+<template name="uploadedInfo">
+  <div class="documentList">
+        {{#each userTemp}}
+          <div class="col-xs-3 col-sm-2 col-md-1">
+            <a href="/upload/{{path}}"><img src="upload/{{path}}" class="img-thumbnail img-responsive"></a><br/>
+            <label>{{ name }}</label> <br/>
+              {{#if _id}}
+                <a class="btn btn-danger deleteUpload">Delete</a>
+              {{/if}}
+          </div>
+        {{/each}}
+  </div>
+</template>
+<template name="home">
+    <p>Hello</p>
+</template>    
