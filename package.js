@@ -23,8 +23,6 @@ Package.onUse(function(api) {
   api.add_files(['uploadmanager.html', 'uploadmanager.js'], ['client', 'server']);
 });
 
-
-
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('jplack:uploadmanager');
