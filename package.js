@@ -20,7 +20,10 @@ Package.onUse(function(api) {
     
   api.use(['twbs:bootstrap@3.3.2', 'nemo64:bootstrap@3.3.1_1'], 'client', {weak: true});
     
-  api.imply('templating')
+  api.imply('templating');
+    
+  api.export(['UserTemp', 'Uploads']);
+    
   api.add_files(['uploadmanager.html', 'uploadmanager.js'], ['client', 'server']);
 });
 
