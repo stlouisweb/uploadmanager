@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jplack:uploadmanager',
-  version: '0.0.3',
+  version: '0.0.4',
   summary: 'adds upload manager for tomi:upload-server.',
   git: 'https://github.com/stlouisweb/uploadmanager',
   documentation: 'README.md'
