@@ -33,3 +33,6 @@ Template.templatename.helpers({
   }
 });
 ```
+
+The package creates a folder .uploads in your project root where files are stored. 
+The package creates and makes available two mongo collections, usertemp (accessible via the variable UserTemp) and Uploads (accessible via the variable Uploads), both collections store infromation related to the uploaded files. uploads stores information about the uploaded file. The usertemp collection stores the file url, file path, the _id of the file in uploads and the Meteor userId of the user who uploaded the file, which is useful for keeping track of images that will be attached to a yet to be published post.
